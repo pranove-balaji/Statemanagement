@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'dart:developer';
 final RxInt count = 0.obs;
 
-class Home_Page extends StatelessWidget {
-  Home_Page({super.key});
+class HomePage extends StatelessWidget {
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,9 @@ class Home_Page extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               count.value++;
-              print(count.value);
+              log(count.value.toString());
             },
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
             child: Text(
               "increment",
               style: TextStyle(
@@ -33,7 +34,6 @@ class Home_Page extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Colors.black),
             ),
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
           )
         ]),
       ),

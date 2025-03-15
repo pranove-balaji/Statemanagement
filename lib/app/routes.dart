@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:state_management/views/home/home.dart';
-import 'package:state_management/views/home/splashscreem.dart';
+import 'package:state_management/views/home/splash_screen.dart';
 import 'package:state_management/views/profile/profile.dart';
 
 AppRoutes() => [

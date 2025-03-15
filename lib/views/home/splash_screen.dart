@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(Duration(seconds: 1));
     _initialformdata();
     await Future.delayed(Duration(seconds: 1));
-    Get.off(Home_Page());
+    Get.off(HomePage());
   }
 
   Future<void> _initialimagedata() async {
